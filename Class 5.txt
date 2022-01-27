@@ -1,0 +1,74 @@
+now another command groups maggarwal
+groups maggarwal = will give grp name and users under that grp
+
+another command id
+id = tells which user id i am and what grp id i am
+
+permissions:
+there r three kinds of people who need permissions
+1-directory or file owner = user = usually have ful permission
+2-group = diff permission can be there for all user in that grp.
+3-every body else - say linux admin who do nt need to view the data files
+
+
+windows only 2 users can login to windows server at the same time. once third user tries to login to the same windows server , any one user has to be kicked out
+
+
+now there are three different kinds of permissions:
+1-read permission(r) - can read only, cannt make any chgs
+2-write permission(w) - can update or make chges to the file
+3-execute permission(x) - run the script 
+so now normally ls -l gives smthing like below:
+drwxr-xr-x
+d=directory
+rwx=these three r for user permissions
+r-x=next three r for grp permission.this grp can r, cannt write, execute
+r-x=further next three r for everybody else.
+
+linux is case sensitive
+
+now next command uptime
+uptime = the time since when the server has been up.
+
+PROCESS - when any task is running, processer will start, once task is finished processer will go away
+so now in windows we can go to taskmanager to see all running processes. 
+In linux also we have a command to do that
+
+now new command is ps -ef
+ps -ef = gives list of all processes that is running on that linux server
+maggarwal = user name
+second set of numbers = parent process id
+third set of number = child process id
+process ids r used to identify the process or even kill that process
+
+now if you in one directory then how do u go to another directory
+say you r in your directory and you want to go to root (/) directory
+command change directory = cd /(location of the directory you want to go)
+then enter, now type pwd again and check if u r in root(/) directory
+cd command can be used only to go to another directory and not to the file
+
+so now u r in root(\) and you want to go \home
+so since ur already in \ you just command cd home (without -) since home in under \ and you r already in \
+
+now next command - how to create a new directory
+so say i have to create a new directory test in maggarwal directory
+command mkdir test ( make sure u r in \home\maggarwal - use pwd to check that)
+
+now lets create a blank file inside test directory
+first go inside the test directory
+cd test ( since u r already in maggarwal directory)
+command = touch test.txt
+then go to ts -l and you will see test.txt file there ( it starts with - since that is a file and not directory)
+
+now lets try to copy file test.txt to test1.txt
+command = cp test.txt test1.txt
+then check doing ls -l , u will see two files test.txt and test1.txt
+
+now lets delete the file 
+command = rm test1.txt
+then check again with ls -l , u will see onlu one file test.txt
+
+now lets rename an existing file
+command = mv test.txt test2.txt
+copy (cp test.txt) will keep original file and create new but rename(mv test.txt) will rename the file name
+
